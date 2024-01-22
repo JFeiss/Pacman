@@ -32,16 +32,11 @@ function Run() {
   }
 }
 setInterval(Run,100)
-// TODO: Add a Javascript setInterval() method that will call the Run() function above every 300 milliseconds. Note: in the video, Dr. Williams uses the setTimeout() method, but here we are going to use a slightly different
-// method called setInterval(), so that you can have practice using this method.
-// Inside of the Run() function you will also have to add an extra argument "pageWidth", which is declared on line 4 when you call the checkPageBounds() function below. 
 
 // This function determines the direction of PacMan based on screen edge detection. 
 function checkPageBounds(direction, imgWidth, pos, pageWidth) {
     var pageWidth = window.innerWidth;
-  //
-  // TODO: Complete this to reverse direction upon hitting screen edge
-  //
+
        if (pos > (pageWidth - imgWidth)) {
             direction = 1;
         }
